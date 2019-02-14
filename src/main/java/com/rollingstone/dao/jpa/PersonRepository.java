@@ -7,9 +7,9 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import com.rollingstone.domain.Person;
 
 public interface PersonRepository extends PagingAndSortingRepository<Person, Long> {
-	Person findPersopnByage(int age);
-
 	List<Person> findPersonByLastName(String lastName);
+
+    List<Person> findPersonByFirstName(String firstName);
 
 	Page<Person> findAll(Pageable pageable);
 }

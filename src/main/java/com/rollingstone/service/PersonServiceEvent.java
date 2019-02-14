@@ -18,7 +18,7 @@ public class PersonServiceEvent extends ApplicationEvent {
 	}
 
 	public String toString() {
-		return "My PersonService Event";
+		return "My PersonService" +eventType+" Event";
 	}
 
 	public Person getEventPerson() {

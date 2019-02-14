@@ -11,10 +11,10 @@ import javax.validation.constraints.NotNull;
 @Component
 public class ServiceProperties {
 	@NotNull // you can also create configurationPropertiesValidator
-	private String name = "Person Service";
+	private String name = "Person Spring Data JPA Service";
 	
 	@NotNull // you can also create configurationPropertiesValidator
-	private String description = "Person Service Description";
+	private String description = "Person Spring Data JPA Service for demoing Microservices with Database Features;";
 
 	public String getName() {
 		return this.name;
